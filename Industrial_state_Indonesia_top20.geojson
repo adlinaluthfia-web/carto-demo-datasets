@@ -20,6 +20,7 @@
     {"type":"Feature","properties":{"name":"Delta Mas (industrial cluster)","city":"Cikarang","province":"West Java","notes":"industrial cluster centroid"},"geometry":{"type":"Point","coordinates":[107.291500,-6.338500]}},
     {"type":"Feature","properties":{"name":"West Point / other Bekasi cluster","city":"Bekasi","province":"West Java","notes":"cluster centroid"},"geometry":{"type":"Point","coordinates":[107.000000,-6.300000]}},
     {"type":"Feature","properties":{"name":"Union Industrial Park (Batam)","city":"Batam","province":"Riau Islands","notes":"Batam small park approx"},"geometry":{"type":"Point","coordinates":[104.045000,1.062000]}},
-    {"type":"Feature","properties":{"name":"Pan-Eastern / miscellaneous industrial cluster","city":"Various","province":"Various","notes":"placeholder for other known estates (approx)"},"geometry":{"type":"Point","coordinates":[106.816666,-6.200000]}}
+    {"type":"Feature","properties":{"name":"Pan-Eastern / miscellaneous industrial cluster","city":"Various","province":"Various","notes":"placeholder for other known estates (approx)"},"geometry":{"type":"Point","coordinates":[106.816666,-6.200000]}},
+    {"type":"Feature","properties":{"name":"Cikande Industrial Estate","city":"Serang","province":"Banten","notes":"New entry added"},"geometry":{"type":"Point","coordinates":[106.3217, -6.1116]}}
   ]
 }
