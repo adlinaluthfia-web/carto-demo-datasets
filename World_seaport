@@ -1,0 +1,1092 @@
+{
+  "openapi": "3.1.0",
+  "x-stoplight": {
+    "id": "3f2tn49gsg5e6"
+  },
+  "info": {
+    "title": "WorldSeaPorts",
+    "version": "1.0",
+    "summary": "World sea ports api allows you to get information about ports"
+  },
+  "servers": [
+    {
+      "url": "https://geocoding.searates.com",
+      "description": "PROD Server"
+    }
+  ],
+  "paths": {
+    "/geo/world-sea-ports/lookup": {
+      "post": {
+        "summary": "Get Port by ID",
+        "description": "Get World Sea Port by ID",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TradeportFull"
+                },
+                "examples": {
+                  "Example 1": {
+                    "value": {
+                      "id": "T7ZOSA8Z2S",
+                      "name": "Odesa",
+                      "locode": "UAODS",
+                      "iata": null,
+                      "location": [
+                        46.5,
+                        30.730773
+                      ],
+                      "features": {
+                        "is_airport": true,
+                        "is_seaport": true,
+                        "is_rail_terminal": true,
+                        "is_road_terminal": true,
+                        "is_icd": true,
+                        "is_fixed_transport": false,
+                        "is_riverport": false
+                      },
+                      "boundaries": {
+                        "polylines": [
+                          "BF2it7Fyzz7ItEwvMu5IvBqvB5pFy6E9wBh2C30F5oMwB"
+                        ]
+                      },
+                      "entityType": "tradeport",
+                      "country": {
+                        "id": "UA",
+                        "name": "Ukraine"
+                      },
+                      "admin": {
+                        "id": "UA.51",
+                        "name": "Odesa",
+                        "location": null
+                      },
+                      "city": {
+                        "id": "CGSDULWV3F",
+                        "name": "Odesa",
+                        "location": [
+                          46.484302,
+                          30.732288
+                        ]
+                      },
+                      "teu": 1600000,
+                      "statistics": {
+                        "area": 32869623.263405
+                      },
+                      "properties": [
+                        {
+                          "id": 3325,
+                          "name": "address",
+                          "display_name": "address",
+                          "value": "1, Customs Sg. <br>Odessa 65026 <br>Ukraine"
+                        },
+                        {
+                          "id": 3326,
+                          "name": "phone",
+                          "display_name": "phone",
+                          "value": "+38 (048) 729 35 00"
+                        },
+                        {
+                          "id": 3327,
+                          "name": "fax",
+                          "display_name": "fax",
+                          "value": "+38 (048) 729 36 27"
+                        },
+                        {
+                          "id": 3328,
+                          "name": "port_type",
+                          "display_name": "port type",
+                          "value": "Seaport"
+                        },
+                        {
+                          "id": 3329,
+                          "name": "port_size",
+                          "display_name": "port size",
+                          "value": "Medium"
+                        },
+                        {
+                          "id": 3330,
+                          "name": "port_authority",
+                          "display_name": "port authority",
+                          "value": "Ukrainian Sea Ports Authority"
+                        },
+                        {
+                          "id": 3337,
+                          "name": "harbor_size",
+                          "display_name": "Harbor Size",
+                          "value": "medium"
+                        },
+                        {
+                          "id": 3338,
+                          "name": "harbor_type",
+                          "display_name": "Harbor Type",
+                          "value": "coastal breakwater"
+                        },
+                        {
+                          "id": 3339,
+                          "name": "shelter",
+                          "display_name": "Shelter",
+                          "value": "good"
+                        },
+                        {
+                          "id": 3341,
+                          "name": "maximum_vessel_size",
+                          "display_name": "Maximum Vessel Size",
+                          "value": "over 500 feet in length"
+                        },
+                        {
+                          "id": 3348,
+                          "name": "channel",
+                          "display_name": "Channel",
+                          "value": "26 - 30 feet<br>7.1 - 9.1 meters"
+                        },
+                        {
+                          "id": 3349,
+                          "name": "anchorage",
+                          "display_name": "Anchorage",
+                          "value": "61 - 65 feet<br>18.6 - 19.8 meters"
+                        },
+                        {
+                          "id": 3350,
+                          "name": "cargo_pier",
+                          "display_name": "Cargo Pier",
+                          "value": "31 - 35 feet<br>9.4 - 10 meters"
+                        },
+                        {
+                          "id": 3351,
+                          "name": "oil_terminal",
+                          "display_name": "Oil Terminal",
+                          "value": "16 - 20 feet<br>4.9 - 6.1 meters"
+                        },
+                        {
+                          "id": 3388,
+                          "name": "ship_repairs",
+                          "display_name": "Ship Repairs",
+                          "value": "major"
+                        },
+                        {
+                          "id": 3389,
+                          "name": "drydock_size",
+                          "display_name": "Drydock Size",
+                          "value": "medium"
+                        },
+                        {
+                          "id": 3390,
+                          "name": "marine_railroad_size",
+                          "display_name": "Marine Railroad Size",
+                          "value": "small"
+                        },
+                        {
+                          "id": 3333,
+                          "name": "first_port_of_entry",
+                          "display_name": "First Port of Entry",
+                          "value": "true"
+                        },
+                        {
+                          "id": 3335,
+                          "name": "e_t_a_message_required",
+                          "display_name": "ETA Message Required",
+                          "value": "true"
+                        },
+                        {
+                          "id": 3336,
+                          "name": "medical_facilities",
+                          "display_name": "Medical Facilities",
+                          "value": "true"
+                        },
+                        {
+                          "id": 3342,
+                          "name": "good_holding_ground",
+                          "display_name": "Good Holding Ground",
+                          "value": "true"
+                        },
+                        {
+                          "id": 3347,
+                          "name": "overhead_limit",
+                          "display_name": "Overhead Limit",
+                          "value": "true"
+                        },
+                        {
+                          "id": 3352,
+                          "name": "compulsory",
+                          "display_name": "Compulsory",
+                          "value": "true"
+                        },
+                        {
+                          "id": 3353,
+                          "name": "advisable",
+                          "display_name": "Advisable",
+                          "value": "true"
+                        },
+                        {
+                          "id": 3354,
+                          "name": "available",
+                          "display_name": "Available",
+                          "value": "true"
+                        },
+                        {
+                          "id": 3356,
+                          "name": "assist",
+                          "display_name": "Assist",
+                          "value": "true"
+                        },
+                        {
+                          "id": 3358,
+                          "name": "pratique",
+                          "display_name": "Pratique",
+                          "value": "true"
+                        },
+                        {
+                          "id": 3359,
+                          "name": "deratt_cert",
+                          "display_name": "Deratt Cert",
+                          "value": "true"
+                        },
+                        {
+                          "id": 3360,
+                          "name": "telephone",
+                          "display_name": "Telephone",
+                          "value": "true"
+                        },
+                        {
+                          "id": 3331,
+                          "name": "river",
+                          "display_name": "river",
+                          "value": "false"
+                        },
+                        {
+                          "id": 3334,
+                          "name": "u_s_a_representative",
+                          "display_name": "USA Representative",
+                          "value": "false"
+                        },
+                        {
+                          "id": 3343,
+                          "name": "tide",
+                          "display_name": "Tide",
+                          "value": "false"
+                        },
+                        {
+                          "id": 3344,
+                          "name": "swell",
+                          "display_name": "Swell",
+                          "value": "false"
+                        },
+                        {
+                          "id": 3357,
+                          "name": "salvage",
+                          "display_name": "Salvage",
+                          "value": "false"
+                        },
+                        {
+                          "id": 256679,
+                          "name": "restriction_other",
+                          "display_name": "Entrance Restriction - Other",
+                          "value": "1"
+                        },
+                        {
+                          "id": 256680,
+                          "name": "mean_tide",
+                          "display_name": "mean tide",
+                          "value": "1"
+                        },
+                        {
+                          "id": 256681,
+                          "name": "maximum_vessel_beam",
+                          "display_name": "maximum vessel beam",
+                          "value": "0"
+                        },
+                        {
+                          "id": 256682,
+                          "name": "maximum_vessel_draft",
+                          "display_name": "maximum vessel draft",
+                          "value": "0"
+                        },
+                        {
+                          "id": 256686,
+                          "name": "quarantine_sanitation",
+                          "display_name": "quarantine sanitation",
+                          "value": "1"
+                        },
+                        {
+                          "id": 256706,
+                          "name": "entrance_width",
+                          "display_name": "Entrance Width",
+                          "value": "0"
+                        },
+                        {
+                          "id": 256707,
+                          "name": "lng_terminal_depth",
+                          "display_name": "Liquified natural gas terminal depth",
+                          "value": "0"
+                        },
+                        {
+                          "id": 256708,
+                          "name": "offshore_max_vessel_length",
+                          "display_name": "offshore_max vessel length",
+                          "value": "0"
+                        },
+                        {
+                          "id": 256709,
+                          "name": "offshore_vessel_beam",
+                          "display_name": "offshore vessel beam",
+                          "value": "0"
+                        },
+                        {
+                          "id": 256710,
+                          "name": "offshore_max_vessel_draft",
+                          "display_name": "offshore_max vessel draft",
+                          "value": "0"
+                        },
+                        {
+                          "id": 326147,
+                          "name": "is_dry",
+                          "display_name": "is dry",
+                          "value": "dry"
+                        },
+                        {
+                          "id": 326148,
+                          "name": "is_tanker",
+                          "display_name": "is tanker",
+                          "value": "tanker"
+                        },
+                        {
+                          "id": 326149,
+                          "name": "is_liner",
+                          "display_name": "is liner",
+                          "value": "liner"
+                        },
+                        {
+                          "id": 326150,
+                          "name": "is_specialized_cargo",
+                          "display_name": "is specialized cargo",
+                          "value": "snp"
+                        },
+                        {
+                          "id": 326151,
+                          "name": "is_offshore",
+                          "display_name": "is offshore",
+                          "value": "offshore"
+                        },
+                        {
+                          "id": 326152,
+                          "name": "is_trade",
+                          "display_name": "is trade",
+                          "value": "trade"
+                        },
+                        {
+                          "id": 3362,
+                          "name": "radio",
+                          "display_name": "Radio",
+                          "value": "true"
+                        },
+                        {
+                          "id": 3363,
+                          "name": "radio_tel",
+                          "display_name": "Radio Tel",
+                          "value": "true"
+                        },
+                        {
+                          "id": 3364,
+                          "name": "air",
+                          "display_name": "Air",
+                          "value": "true"
+                        },
+                        {
+                          "id": 3365,
+                          "name": "rail",
+                          "display_name": "Rail",
+                          "value": "true"
+                        },
+                        {
+                          "id": 3366,
+                          "name": "wharves",
+                          "display_name": "Wharves",
+                          "value": "true"
+                        },
+                        {
+                          "id": 3367,
+                          "name": "anchor",
+                          "display_name": "Anchor",
+                          "value": "true"
+                        },
+                        {
+                          "id": 3370,
+                          "name": "100+_ton_lifts",
+                          "display_name": "100+ Ton Lifts",
+                          "value": "true"
+                        },
+                        {
+                          "id": 3372,
+                          "name": "50-100_ton_lifts",
+                          "display_name": "50-100 Ton Lifts",
+                          "value": "true"
+                        },
+                        {
+                          "id": 3373,
+                          "name": "mobile_cranes",
+                          "display_name": "Mobile Cranes",
+                          "value": "true"
+                        },
+                        {
+                          "id": 3374,
+                          "name": "25-49_ton_lifts",
+                          "display_name": "25-49 Ton Lifts",
+                          "value": "true"
+                        },
+                        {
+                          "id": 3375,
+                          "name": "floating_cranes",
+                          "display_name": "Floating Cranes",
+                          "value": "true"
+                        },
+                        {
+                          "id": 3376,
+                          "name": "0-24_ton_lifts",
+                          "display_name": "0-24 Ton Lifts",
+                          "value": "true"
+                        },
+                        {
+                          "id": 3382,
+                          "name": "provisions",
+                          "display_name": "Provisions",
+                          "value": "true"
+                        },
+                        {
+                          "id": 3383,
+                          "name": "water",
+                          "display_name": "Water",
+                          "value": "true"
+                        },
+                        {
+                          "id": 3384,
+                          "name": "fuel_oil",
+                          "display_name": "Fuel Oil",
+                          "value": "true"
+                        },
+                        {
+                          "id": 3385,
+                          "name": "diesel_oil",
+                          "display_name": "Diesel Oil",
+                          "value": "true"
+                        },
+                        {
+                          "id": 3386,
+                          "name": "deck",
+                          "display_name": "Deck",
+                          "value": "true"
+                        },
+                        {
+                          "id": 3387,
+                          "name": "engine",
+                          "display_name": "Engine",
+                          "value": "true"
+                        },
+                        {
+                          "id": 3391,
+                          "name": "garbage_disposal",
+                          "display_name": "Garbage Disposal",
+                          "value": "true"
+                        },
+                        {
+                          "id": 3392,
+                          "name": "dirty_ballast",
+                          "display_name": "Dirty Ballast",
+                          "value": "true"
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "operationId": "get-port-by-id",
+        "x-stoplight": {
+          "id": "g9mfpp8bwazgz"
+        },
+        "security": [
+          {
+            "api_key": []
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LookupRequest"
+              },
+              "examples": {
+                "Example 1": {
+                  "value": {
+                    "id": "T7ZOSA8Z2S"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/geo/world-sea-ports/list-by-country": {
+      "post": {
+        "description": "Get ports list by selected country",
+        "summary": "Ports by country",
+        "operationId": "ports-by-country",
+        "security": [
+          {
+            "api_key": []
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ListByCountryRequest"
+              },
+              "examples": {
+                "Example 1": {
+                  "value": {
+                    "country_code": "LT",
+                    "is_river": false
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Tradeport",
+                    "x-stoplight": {
+                      "id": "qye06nivcfrlw"
+                    }
+                  }
+                },
+                "examples": {
+                  "Example 1": {
+                    "value": [
+                      {
+                        "id": "THFZ3ZZPAC",
+                        "name": "Klaipeda",
+                        "location": [
+                          55.703557,
+                          21.126023
+                        ],
+                        "locode": "LTKLJ",
+                        "iata": null,
+                        "features": {
+                          "is_airport": true,
+                          "is_seaport": true,
+                          "is_rail_terminal": true,
+                          "is_road_terminal": false,
+                          "is_icd": false,
+                          "is_fixed_transport": false,
+                          "is_river_port": false
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/geo/world-sea-ports/find": {
+      "post": {
+        "summary": "Find Port by name",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Tradeport"
+                },
+                "examples": {
+                  "Example 1": {
+                    "value": {
+                      "id": "T7ZOSA8Z2S",
+                      "name": "Odesa",
+                      "location": [
+                        46.5,
+                        30.730773
+                      ],
+                      "locode": "UAODS",
+                      "iata": null,
+                      "features": {
+                        "is_airport": false,
+                        "is_seaport": true,
+                        "is_rail_terminal": true,
+                        "is_road_terminal": true,
+                        "is_icd": true,
+                        "is_fixed_transport": false,
+                        "is_river_port": false
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        },
+        "operationId": "find-port-by-name",
+        "x-stoplight": {
+          "id": "adqmnpk431t3q"
+        },
+        "description": "Find Port by name",
+        "security": [
+          {
+            "api_key": []
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FindRequest"
+              },
+              "examples": {
+                "Example 1": {
+                  "value": {
+                    "query": "Odesa"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ListByCountryRequest": {
+        "title": "ListByCountryRequest",
+        "type": "object",
+        "examples": [
+          {
+            "id": 142,
+            "firstName": "Alice",
+            "lastName": "Smith",
+            "email": "alice.smith@gmail.com",
+            "dateOfBirth": "1997-10-31",
+            "emailVerified": true,
+            "signUpDate": "2019-08-24"
+          }
+        ],
+        "x-stoplight": {
+          "id": "2u3tf2tvy47ye"
+        },
+        "required": [
+          "country_code"
+        ],
+        "properties": {
+          "country_code": {
+            "type": "string",
+            "x-stoplight": {
+              "id": "visiirx21ojye"
+            },
+            "minLength": 2,
+            "maxLength": 2,
+            "pattern": "^[A-Z]{2}"
+          },
+          "is_river": {
+            "type": "boolean",
+            "x-stoplight": {
+              "id": "w93u4cms8mcsi"
+            }
+          }
+        }
+      },
+      "LookupRequest": {
+        "title": "LookupRequest",
+        "x-stoplight": {
+          "id": "w2mjcv24lf5vr"
+        },
+        "type": "object",
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "$ref": "#/components/schemas/TradeportId",
+            "x-stoplight": {
+              "id": "v28f2g2jo4ybu"
+            }
+          }
+        }
+      },
+      "FindRequest": {
+        "title": "FindRequest",
+        "x-stoplight": {
+          "id": "34h5t2cwb4brl"
+        },
+        "type": "object",
+        "required": [
+          "query"
+        ],
+        "properties": {
+          "query": {
+            "type": "string",
+            "x-stoplight": {
+              "id": "noxhd8ykaazu7"
+            }
+          }
+        }
+      },
+      "TradeportFull": {
+        "title": "TradeportFull",
+        "x-stoplight": {
+          "id": "2t0ef1frrmakz"
+        },
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/Tradeport",
+            "x-stoplight": {
+              "id": "jn194jouq4bug"
+            }
+          },
+          {
+            "type": "object",
+            "properties": {
+              "country": {
+                "$ref": "#/components/schemas/Country",
+                "x-stoplight": {
+                  "id": "jy6f8nfg931wm"
+                }
+              },
+              "admin": {
+                "$ref": "#/components/schemas/Admin",
+                "x-stoplight": {
+                  "id": "wf45uc1gooedz"
+                }
+              },
+              "city": {
+                "$ref": "#/components/schemas/City",
+                "x-stoplight": {
+                  "id": "89m8zeqiyuxp7"
+                }
+              },
+              "teu": {
+                "type": "number",
+                "x-stoplight": {
+                  "id": "6z635ksmu7gzn"
+                }
+              },
+              "statistics": {
+                "type": "object",
+                "x-stoplight": {
+                  "id": "7794c8fhqo4f5"
+                },
+                "properties": {
+                  "area": {
+                    "type": "number",
+                    "x-stoplight": {
+                      "id": "8nbxtbq42llg1"
+                    }
+                  }
+                }
+              },
+              "properties": {
+                "x-stoplight": {
+                  "id": "7jyadbotg563i"
+                },
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/Property",
+                  "x-stoplight": {
+                    "id": "nwsmcab5jcbkr"
+                  }
+                }
+              },
+              "boundaries": {
+                "type": "object",
+                "x-stoplight": {
+                  "id": "byjothrtipmi2"
+                },
+                "properties": {
+                  "polylines": {
+                    "type": "array",
+                    "x-stoplight": {
+                      "id": "c9p3iupobd98z"
+                    },
+                    "items": {
+                      "$ref": "#/components/schemas/Polygon",
+                      "x-stoplight": {
+                        "id": "ixizql4olimlx"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      "Features": {
+        "title": "Features",
+        "x-stoplight": {
+          "id": "zj89lhy2nxts1"
+        },
+        "type": "object",
+        "properties": {
+          "is_seaport": {
+            "type": "boolean",
+            "x-stoplight": {
+              "id": "6vj3z0yh4vh4b"
+            },
+            "description": "Indicates that the current entity is served by one or more sea terminals."
+          },
+          "is_river": {
+            "type": "boolean",
+            "x-stoplight": {
+              "id": "dp0oq4xzfmcpu"
+            },
+            "description": "Indicates that the current entity is served by one or more river terminals."
+          },
+          "is_rail_terminal": {
+            "type": "boolean",
+            "x-stoplight": {
+              "id": "zjmw754e5airw"
+            },
+            "description": "Indicates that the current entity is served by one or more rail terminals."
+          },
+          "is_airport": {
+            "type": "boolean",
+            "x-stoplight": {
+              "id": "p9oprndcadgn3"
+            },
+            "description": "Indicates that the current entity is served by one or more air terminals."
+          },
+          "is_road_terminal": {
+            "type": "boolean",
+            "x-stoplight": {
+              "id": "djw5t6vkbwqxl"
+            },
+            "description": "Indicates that the current entity is served by one or more road terminals."
+          },
+          "is_icd": {
+            "type": "boolean",
+            "x-stoplight": {
+              "id": "eq5nbggcahomx"
+            },
+            "description": "Indicates that the current entity is served by one or more ICD terminals"
+          },
+          "is_fixed_transport": {
+            "type": "boolean",
+            "x-stoplight": {
+              "id": "vx2ax88kjq5oc"
+            },
+            "description": "Indicates that the current entity is served by one or more fixed transport infrastructure"
+          }
+        },
+        "description": "Specifies the transport and logistics functions of the port"
+      },
+      "Country": {
+        "title": "Country",
+        "x-stoplight": {
+          "id": "clvzxbwg58hs4"
+        },
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "x-stoplight": {
+              "id": "jgdbklq8b1emz"
+            }
+          },
+          "name": {
+            "type": "string",
+            "x-stoplight": {
+              "id": "x2081bjhebpb4"
+            }
+          }
+        }
+      },
+      "City": {
+        "title": "City",
+        "x-stoplight": {
+          "id": "lcbl41p3ijyzi"
+        },
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "x-stoplight": {
+              "id": "zpo4vnt1763hh"
+            }
+          },
+          "name": {
+            "type": "string",
+            "x-stoplight": {
+              "id": "hqftqm66425ov"
+            }
+          },
+          "location": {
+            "type": "array",
+            "x-stoplight": {
+              "id": "dmvokxnvdagbq"
+            },
+            "minItems": 2,
+            "maxItems": 2,
+            "items": {}
+          }
+        }
+      },
+      "Admin": {
+        "title": "Admin",
+        "x-stoplight": {
+          "id": "zx8a0lzo16bku"
+        },
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "x-stoplight": {
+              "id": "ysuxkrsdqp8hc"
+            }
+          },
+          "name": {
+            "type": "string",
+            "x-stoplight": {
+              "id": "n1933bup0tehq"
+            }
+          }
+        }
+      },
+      "Property": {
+        "title": "Property",
+        "x-stoplight": {
+          "id": "8hfp168zna02r"
+        },
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number",
+            "x-stoplight": {
+              "id": "byozvht11qp1p"
+            }
+          },
+          "name": {
+            "type": "string",
+            "x-stoplight": {
+              "id": "gctex4td17ry4"
+            }
+          },
+          "display_name": {
+            "type": "string",
+            "x-stoplight": {
+              "id": "61mvzuvhmh0qz"
+            },
+            "description": "alternative propierty name"
+          },
+          "value": {
+            "type": "string",
+            "x-stoplight": {
+              "id": "eebmy5io199ar"
+            }
+          }
+        }
+      },
+      "Tradeport": {
+        "title": "Tradeport",
+        "x-stoplight": {
+          "id": "pwqiouccma87s"
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "features"
+        ],
+        "properties": {
+          "id": {
+            "$ref": "#/components/schemas/TradeportId",
+            "x-stoplight": {
+              "id": "7p5o33hx2el3o"
+            }
+          },
+          "name": {
+            "type": "string",
+            "x-stoplight": {
+              "id": "xa5tm9muuu361"
+            }
+          },
+          "location": {
+            "type": "array",
+            "x-stoplight": {
+              "id": "9dxkqtwb2bfx5"
+            },
+            "minItems": 2,
+            "maxItems": 2,
+            "description": "array of coordinates latitude, longitude in WGS84 format",
+            "items": {}
+          },
+          "locode": {
+            "type": "string",
+            "x-stoplight": {
+              "id": "6iajx3bm5g5r6"
+            }
+          },
+          "iata": {
+            "type": "string",
+            "nullable": true,
+            "x-stoplight": {
+              "id": "g9fbpo56x0xaw"
+            },
+            "minLength": 3,
+            "maxLength": 3
+          },
+          "features": {
+            "$ref": "#/components/schemas/Features",
+            "x-stoplight": {
+              "id": "6rh783nxsam9u"
+            }
+          }
+        }
+      },
+      "TradeportId": {
+        "title": "TradeportId",
+        "x-stoplight": {
+          "id": "cl7zwiqxg9aau"
+        },
+        "type": "string",
+        "description": "Identifyer for city, builded like first letter 'T' + `XXXXXXXXX`, where X's is any letter or digit",
+        "pattern": "^[T][A-Za-z0-9]{9}$",
+        "minLength": 10,
+        "maxLength": 10
+      },
+      "Polygon": {
+        "title": "Polygon",
+        "x-stoplight": {
+          "id": "fncfn5embww03"
+        },
+        "type": "string",
+        "description": "string containing a compressed polygon using flexiblePolyline"
+      }
+    },
+    "securitySchemes": {
+      "api_key": {
+        "name": "api_key",
+        "type": "apiKey",
+        "in": "query"
+      }
+    }
+  }
+}
